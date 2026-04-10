@@ -1,0 +1,17 @@
+.ai/
+.claude/
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Vite
+*.local
