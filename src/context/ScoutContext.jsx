@@ -9,6 +9,7 @@ export function ScoutProvider({ children }) {
   const [listingPrice, setListingPrice] = useState('')
   const [geocodeError, setGeocodeError] = useState(null)
   const [isLoading, setIsLoading] = useState(false)
+  const [poiDistances, setPoiDistances] = useState({})
 
   function setGeocodeResult({ lat, lon, displayName }) {
     setLat(lat)
@@ -28,6 +29,8 @@ export function ScoutProvider({ children }) {
       setGeocodeError,
       isLoading,
       setIsLoading,
+      poiDistances,
+      setPoiDistances,
     }}>
       {children}
     </ScoutContext.Provider>
